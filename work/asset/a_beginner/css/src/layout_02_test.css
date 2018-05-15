@@ -1,0 +1,40 @@
+/* layout_02_test.css */
+
+/* reset.css */
+html, body {margin: 0;}
+h1, h2, h3, h4, h5, h6 {margin: 0; padding: 0;}
+ul, ol, li {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none; color: inherit;}
+.clearfix::after,
+.clearfix:after {content: " "; display: block; width: 100%; height: 0; clear: both;}
+
+/* design */
+#wrap {width: 700px; height: 745px; background-color: #f0a; margin: 50px auto;}
+
+/* headerBox================================================*/ 
+#headerBox {width: 700px; height: 80px; background-color: #afd;
+            padding: 15px; box-sizing: border-box;}
+.logo {width: 100px; height: 50px; background-color: #fff; float: left;}            
+#headerBox > ul >li {width: 100px; height: 30px; background-color: #fff;
+                     float: right; margin-top: 20px; margin-left: 5px;}
+
+/* bannerBox================================================*/
+#banner {width: 700px; height: 250px; background-color: #ff7;}
+
+/* aside====================================================*/
+#aside {width: 700px; height: 35px; background-color: #036;}
+
+/* contentBox===============================================*/
+#contentBox > ul {width: 350px; height: 300px; float: left;}
+#contentBox > ul > li {background-color: #fff;}
+
+  .con_01 {background-color: #faa; padding: 20px; box-sizing: border-box;}
+    .con_01 > li {width: 140px; height: 120px;
+                  float: left; margin: 5px;}
+
+  .con_02 {background-color: #faf; padding: 10px; box-sizing: border-box;}
+    .con_02 > li {width: 258px; height: 50px;
+                  margin: 30px;}
+
+/* footerBox================================================*/
+#footer {width: 700px; height: 80px; background-color: #ea4; float: left;}
