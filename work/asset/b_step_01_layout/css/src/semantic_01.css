@@ -1,0 +1,61 @@
+/* semantic_01.css */
+
+#wrap {margin: auto; box-sizing: border-box; padding: 0.5rem;
+       width: 960px; width: 60rem; height: auto; background-color: #f09;}
+
+  /* #headBox ============================================== */
+  #headBox {margin-bottom: 0.5rem; width: 100%; height: auto; height: auto; background-color: #0af;}
+  #headBox > h1 {float: left; margin: 5px; width: 39%; height: 130px; background-color: #faa;}
+
+  /* #gnb ================================================== */
+  #gnb {width: 100%; height: 50px; height: 3.125rem; background-color: #06a;}
+  #gnb > h2 > ul > li {float: left; margin: 5px 4px; width: 24%; height: 40px; background-color: #fff;}
+
+  /* #contentBox =========================================== */
+  #contentBox {width: 100%; height: auto; background-color: #fff;}
+  #contentBox > h2 {width: 0; height: 0; position: relative; z-index: -100;}   
+
+    /* side_view ------------------------------------------- */
+    .side_view {box-sizing:border-box; padding: 10px; float: left; width: 40%; height:auto; background-color: #fa0;}
+
+    .side_view > h3 {margin-bottom: 1rem;
+                     width: 100%; height: 100px; height: 6.25rem; background-color: #faa;}
+
+    .side_view > ul {width: 100%; height: auto; height: auto;}
+
+    .side_view > ul > li {margin-bottom: 10px; width: 100%; height:auto;}
+
+    .side_view > ul > li > dl > dt {width: 100%; height: 10%; background-color: #fff;}
+    .side_view > ul > li > dl > dd {margin-top: 8.4px; margin-left: 70px; width: 80%; height: 6px; background-color: #fda;}
+
+    /* content_view ---------------------------------------- */
+    .content_view {box-sizing:border-box; padding: 10px; float: left; width: 60%; height: auto; height: auto; background-color: #afa;}
+
+    /* IR(image replace)기법 다룸다음 css에~ */
+    /*.content_view > h3 {width: 0; height: 0; overflow: hidden;}*/
+    /*.content_view > h3 {width: 0; height: 0; text-indent: -9999rem; color: #334;}*/
+    .content_view > h3 {width: 0; height: 0; position: relative; z-index: -100;}
+    /*.content_view > h3 {width: 0; height: 0; font-size: 0;}*/
+
+    .content_view > .con {float: left; margin-bottom: 6px;
+                          width: 100%; height: 140px; background-color: #fff;}
+    .content_view > .con_h4 { float: left; margin-bottom: 6px; width: 100%; height: 30px; background-color: #faa;}
+    .content_view > .con2 {float: left; margin-bottom: 6px;
+                          width: 100%; height: 120px; background-color: #fff;}
+
+    .content_view > .con2 {box-sizing: border-box; padding: 10px;}
+    .content_view > .con2 h4 {width: 0;height: 0;position: relative; z-index: -100;}
+   
+    .content_view > .con2 >  ul {width: 100%; height: 100%;}
+    .content_view > .con2 >  ul > li {margin-left: 10px; float: left;width: 22%; height: 100%; background-color: #0af;}
+    .content_view > .con2 >  ul > li:last-child {margin-right: 0px;}
+
+    .content_view > .con h4 {width: 0;height: 0;position: relative; z-index: -100;}
+    .content_view > .con > ul {margin: 10px; width: auto; height: 100%;}
+    .content_view > .con > ul > li {float: left; width: 10%; height: 85%; background-color: #0af;}
+    .content_view > .con > ul > li:last-child {float: right;}
+
+  /* #footBox ============================================== */
+  #footBox {margin-top: 1rem; width: 100%; height: 120px; height: 7.5rem; background-color: #0af;}
+  #footBox > h2 {float: left; margin: 6px; width: 39%; height: 110px; background-color: #faa;}
+  #footBox > div {float: right; margin-top: 36px; margin-right: 6px; width: 58%; height: 80px; background-color: #fff;}
