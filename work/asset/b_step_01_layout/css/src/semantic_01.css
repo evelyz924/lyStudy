@@ -9,7 +9,7 @@
 
   /* #gnb ================================================== */
   #gnb {width: 100%; height: 50px; height: 3.125rem; background-color: #06a;}
-  #gnb > h2 > ul > li {float: left; margin: 5px 4px; width: 24%; height: 40px; background-color: #fff;}
+  #gnb > ul > li {float: left; margin: 5px 4px; width: 24%; height: 40px; background-color: #fff;}
 
   /* #contentBox =========================================== */
   #contentBox {width: 100%; height: auto; background-color: #fff;}
