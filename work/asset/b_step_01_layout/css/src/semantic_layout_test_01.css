@@ -1,7 +1,7 @@
 /* semantic_layout_test_01.css */
 
 #wrap {margin: 50px; width: 960px; height: auto; min-height: 3000px;
-       background-color: #f0a; border: 2px solid #000;}
+        border: 2px solid #000;}
 
 /* #headBox ==================*/
 #headBox {box-sizing: border-box; padding: 26px 10px;
