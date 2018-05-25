@@ -18,7 +18,7 @@
 <body>
   ${4:<div id="wrap"></div>}
   <!-- javascript -->
-  <script src="../hs/base/jquery-3.3.1.js"></script>
+  <script src="../js/base/jquery-3.3.1.js"></script>
 </body>
 </html>
 ]]></content>
