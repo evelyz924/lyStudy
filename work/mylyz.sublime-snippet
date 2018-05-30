@@ -14,14 +14,17 @@
   <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
   <link rel="stylesheet" type="text/css" href="../css/src/${1:filename}.css" />
 
-  <!-- ie --><!-- cc:ie6 tab 누르면 6버전 이하 쓸 수 있는 단축키 -->
+  <!-- 조건부 주석 -->
+  <!-- cc:id6 -->
   <!-- [if lte IE9] >
     <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
     <script src="../ie/pie/PIE_IE9.js"></script>
   < ![endif] -->
 
   <!-- favicon -->
+  <!-- link:favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <!-- link:touch -->
   <link rel="apple-touch-icon" href="../favicon.png" />
   
   <title>${2:pageTitle}</title>
