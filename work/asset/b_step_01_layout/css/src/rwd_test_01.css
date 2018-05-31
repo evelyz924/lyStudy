@@ -1,0 +1,76 @@
+/* rwd_test_01.css */
+
+/* design */
+
+/* common area */
+#wrap {
+  width: auto; height: auto;
+}
+  #headBox {
+    box-sizing: border-box; padding: 2%;
+    width: 100%; height: 60px; height: 3.75rem;
+    background-color: #333;
+  }
+    h1 {
+      float: left;
+      width: 40%;
+      height: 90%;
+      background-color: #afa;
+    }
+    #headBox > div {
+      float: right;
+      width: 25%;
+      height: 90%;
+    }
+    .nav_1 {
+      float: left;
+      margin-right: 5%;
+      width: 45%;
+      height: 100%;
+      background-color: #afa;
+    }
+    .nav_2 {
+      float: left;
+      width: 50%;
+      height: 100%;
+      background-color: #afa;
+    }
+  #adBox {width: 100%; height: 450px; height: 28.125rem; background-color: #fa5;}
+  #etcBox {width: 100%; height: 210px; height: 13.125rem; background-color: #7f7;}
+  #conBox {width: 100%; height: 540px; height: 33.75rem; background-color: #ccc;}
+  #footBox {width: 100%; height: 120px; height: 7.5rem; background-color: #333;}
+
+/* -------------------------------------------------------------------------------- */
+/* mobile 480 */
+@media screen and (max-width: 480px) {
+  #headBox {height: 12.5vw;/* 60/480*100 */}
+    h1 {height: 80%;}
+  #adBox {height: 720px; height: 45rem; height: 150vw;/* 720/480*100 */}
+  #etcBox {height: 720px; height: 45rem; height: 150vw;/* 720/480*100 */}
+  #conBox {height: 720px; height: 45rem; height: 150vw;/* 720/480*100 */}
+  #footBox {height: 60px; height: 3.75rem; height: 12.5vw;/* 60/480*100 */}
+}
+
+/* tablet 768 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  #headBox {height: 7.8125vw;/* 60/768*100 */}
+  #adBox {height: 58.59375vw;/* 450/768*100 */}
+  #etcBox {height: 27.34375vw;/* 210/768*100 */}
+  #conBox {height: 70.3125vw;/* 540/768*100 */}
+  #footBox {height: 15.625vw;/* 120/768*100 */}
+}
+
+/* pc 960 */
+@media screen and (min-width: 769px) and (max-width: 960px) {
+  #headBox {height: 6.25vw;/* 60/960*100 */}
+  #adBox {height: 46.875vw;/* 450/960*100 */}
+  #etcBox {height: 21.875vw;/* 210/960*100 */}
+  #conBox {height: 56.25vw;/* 540/960*100 */}
+  #footBox {height: 12.5vw;/* 120/960*100 */}
+}
+
+
+/* pc-full */
+@media screen and (min-width: 961px) {
+
+}
