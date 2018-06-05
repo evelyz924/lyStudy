@@ -1,32 +1,90 @@
 /* pantech_layout_01.css */
 
 .wrap {width: 100%; height: 100%;}
+.area_wrap {width: 100%; height: auto;}
 
-/* headBox ===================================================================*/
-#headBox {position: fixed; top: 0; left: 0; z-index: 100;
-  width: 100%; height: 3.4375rem; background-color: rgba(100,100,100,0.7);}
+/* .head_wrap ===================================================================*/
+.head_wrap {position: fixed; top: 0; left: 0; z-index: 100; background-color: rgba(100,100,100,0.7);}
+#headBox {box-sizing: border-box; padding: 0.625rem; margin: auto; width: 75rem; height: 3.4375rem; background-color: inherit;}
+#logo{float: left; width: 6.5rem; height: 100%; background-color: #fff;}
+h1 {width: 100%; height: 100%;}
+#gnbBox {margin-left: 6.625rem; float: left; width: 45.5rem; height: 100%;}
+#gnbBox > nav {float: left; margin-right: 6.375rem; width: 4rem; height: 100%; background-color: #fff;}
+#gnbBox > nav:last-child {margin-right: 0;}
+#searchBox {margin-left: 3.75rem; float: left; width: 7.875rem; height: 100%;}
+#searchBox > div {float: left; width: 3.875rem; height: 100%; background-color: #fff;}
+#searchBox > div:last-child {box-sizing: border-box; border-left: 0.0625rem solid #ccc;}
 
-/* adBox =====================================================================*/
-#adBox {width: 100%; /*height: 54.875rem;*/ height: 100%; background-color: #25f;}
+/* .ad_wrap =====================================================================*/
+.ad_wrap {position: relative; height: 100%;}
+#adBox {box-sizing: border-box; padding-top: 8.75rem; padding-left: 22.5rem; width: 100%; /*height: 54.875rem;*/ height: 100%; background-color: #0af;}
 /** 만약: .wrap의 영역이 body와 동일하게 처리하지 않을 경우,
   * #adBox의 높이를 브라우저의 높이와 동일하게 처리해야 한다면?
   * js를 활용:
     1. 브라우저의 높이 값을 파악(margin, padding 값이 존재하는지에 따라 조금 다르다.)
     2. #adBox에 파악된 높이 값을 적용
 */
-/* infoBox ===================================================================*/
-#infoBox {position: absolute; left: 0; bottom: 0;
-  width: 100%; height: 9.375rem; background-color: rgba(100,100,100,0.7);}
+#adBox > dl {width: 42.5rem; height: 6.625rem;}
+#adBox dt {width: 14.875rem; height: 3.5625rem; background-color: #fff;}
+#adBox dd {margin-top: 0.875rem; width: 42.5rem; height: 2.1875rem; background-color: #fff;}
+#indigator {position: absolute; bottom: 13.75rem; left: 50%; margin-left: -2.03125rem;
+  width: 4.0625rem; height: 0.9375rem; #ccc;}
+#indigator > li {float: left; margin-right: 0.625rem; width: 0.9375rem; height: 100%; border-radius: 100%; background-color: #fff;}
+#indigator > li:last-child {margin-right: 0;}
+/* .info_wrap ===================================================================*/
+.info_wrap {position: absolute; left: 0; bottom: 0;
+  width: 100%; height: auto; background-color: rgba(100,100,100,0.7);}
+#infoBox {box-sizing: border-box; margin: auto;
+  width: 75rem; height: 9.375rem; background-color: inherit;}
+.info_text {float: left; margin-top: 2.5rem;  width: 8.875rem; height: 3rem; background-color: #fff;}
+#infoBox > ul {float: left; margin-top: 2.5rem; width: 7.5rem; height: 3rem;}
+#infoBox li {margin-left: 1.875rem; width: 6.875rem; height: 1rem; background-color: #fff;}
+#infoBox li:last-child {margin-top: 0.9375rem; width: 15.25rem;}
+.img {float: right; width: 250px; height: 100%; background-color: #fff;}
 
-/* businessBox ===============================================================*/
-#businessBox {width: 100%; height: 100%; background-color: #4f7;}
+/* .business_wrap ===============================================================*/
+.business_wrap {width: 100%; height: 100%; background-color: #4f7;}
+#businessBox {box-sizing: border-box; padding-top: 11.25rem; margin: auto;
+  width: 75rem; height: 100%; background-color: #487;}
+.business_box1 {width: 14.25rem; height: 6.625rem;}
+.business_box1 > dt {width: 11rem; height: 1.5625rem; background-color: #fff;}
+.business_box1 > dd {margin-top: 2.5rem; width: 14.25rem; height: 2.5rem; background-color: #fff;}
 
-/* aboutBox ==================================================================*/
-#aboutBox {width: 100%; height: 70%; /*min-height: 50.5rem;*/ background-color: #58f;}
+.business_box2 {margin-left: 21.375rem; margin-top: 3.5rem; width: 40.8125rem; height: 29.75rem;}
+.business_box2 > div {margin-bottom: 5.625rem; width: 40.875rem; height: 6.25rem;}
+.business_box2 > div:last-child {margin-bottom: 0;}
+.icon_box {float: left; width:4.5625rem; height: 6.25rem; background-color: #fff;}
+.text_box {float: left; margin-left: 1.375rem; width: 34.875rem; height: 6.25rem;}
+.text_box > dt {width: 16.75rem; height: 2.1875rem; background-color: #fff;}
+.text_box > dd {margin-top: 0.9375rem; width: 34.875rem; height: 3.125rem; background-color: #fff;}
 
-/* sideBox ===================================================================*/
-#sideBox {width: 100%; height: 30%; /*min-height: 11.125rem;*/ background-color: #6f9;}
+/* .about_side_wrap ==================================================================*/
+.about_side_wrap {width: 100%; height: 100%; background-color: #58f;}
+#aboutBox {box-sizing: border-box; padding-top: 6.125rem; padding-bottom: 5.9375rem; margin: auto;
+  width: 75rem; height: 70%; /*min-height: 50.5rem;*/ background-color: #fa0;}
+#aboutBox > dl {width: 15.625rem; height: 5.25rem;}
+#aboutBox dt {width: 9.125rem; height: 1.5rem; background-color: #fff;}
+#aboutBox dd {margin-top: 2.5rem; width: 15.625rem; height: 1.375rem; background-color: #fff;}
 
-/* footBox ===================================================================*/
-#footBox {box-sizing: border-box; border-top: 0.0625rem solid #777;
-  width: 100%; height: 6.9375rem; background-color: #710;}
+.box_wrap {margin-top: 3.75rem; box-sizing: border-box; padding: 0 1.5rem; width: 75rem; height: 20.3125rem;}
+.a_box {float: left; box-sizing: border-box; padding: 1.375rem 0.875rem;  margin-right: 4.0625rem; width: 21.25rem; height: 100%; background-color: #fff;}
+.box_wrap > div:last-child {margin-right: 0;}
+.a_top {width: 100%; height: 2.25rem; border-bottom: 0.0625rem solid #fa0;}
+.t_title {float: left; width: 4.5rem; height: 1.25rem; background-color: #fa0;}
+.t_plus {float: left; margin-left: 11.25rem; width: 3.5rem; height: 1.25rem; background-color: #fa0;}
+.a_mid {box-sizing: border-box; padding: 0.9375rem 0.3125rem 0.9375rem 0.1875rem; width: 100%; height: 13.125rem; border-bottom: 0.0625rem solid #fa0;}
+.m_img {width: 100%; height: 11.25rem; background-color: #fa0;}
+.a_bottom {box-sizing: border-box; padding-top: 12px; width: 100%; height: 35px;}
+.b_par {width: 100%; height: 100%; background-color: #fa0;}
+
+#sideBox {margin: auto; width: 75rem; height: 30%; /*min-height: 11.125rem;*/ background-color: #af9;}
+.s_box {float: left; box-sizing: border-box; padding: 35px 56px; border-right: 1px solid #ccc; width: 20%; height: 100%; background-color: #fff;}
+.sideBox > div:last-child {border-right: 0;}
+.s_icon_box {width: 100%; height: 100%;}
+.s_icon {width: 100%; height: 70%; background-color: #fa0;}
+.s_text {margin-top: 20%; width: 100%; height: 20%; background-color: #fa0;}
+
+/* .foot_wrap ===================================================================*/
+.foot_wrap {width: 100%; height: auto; border-top: 0.0625rem solid #777;}
+#footBox {margin: auto; box-sizing: border-box;
+  width: 75rem; height: 6.875rem; background-color: #dfddfd;}
