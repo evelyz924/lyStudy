@@ -88,3 +88,4 @@ h1 {width: 100%; height: 100%;}
 .foot_wrap {width: 100%; height: auto; border-top: 0.0625rem solid #777;}
 #footBox {margin: auto; box-sizing: border-box;
   width: 75rem; height: 6.875rem; background-color: #dfddfd;}
+.f_logo {float: left; width: 105px; height: 40px; background-color: #ccc;}
