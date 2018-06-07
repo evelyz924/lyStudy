@@ -46,7 +46,7 @@ h1 {width: 100%; height: 100%;}
 .business_wrap {width: 100%; height: 100%; background-color: #4f7;}
 #businessBox {box-sizing: border-box; padding-top: 11.25rem; margin: auto;
   width: 75rem; height: 100%; background-color: #487;}
-.business_box1 {width: 14.25rem; height: 6.625rem;}
+.business_box1 {width: 14.25rem; height: 6.625rem;}/* layout_sample.css 참조 */
 .business_box1 > dt {width: 11rem; height: 1.5625rem; background-color: #fff;}
 .business_box1 > dd {margin-top: 2.5rem; width: 14.25rem; height: 2.5rem; background-color: #fff;}
 

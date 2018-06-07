@@ -1,0 +1,84 @@
+/* bacground_02.css */
+
+.wrap {margin: auto; width: 60rem; height: auto; background-color: #fafafa;}
+h1 {background-color: #04f; color: #fff; text-align: center; font-size: 1.7rem;}
+
+.icons {box-sizing: border-box; padding: 0.5rem; width: 100%; height: auto;}
+.icons::after,.icons:after {content: " "; display: block; clear: both;}
+
+.icons > li {margin: 1rem; float: left; width: 3.5rem; height: 3.5rem; border: 0.125rem solid #777;}
+/*.icons > li > a {display: block; width: 100%; height: 100%;}
+.icons > li > a > span {display: block; width: 0; height: 0; overflow: hidden;}*/
+
+.icons > li > a {background-image: url("../../img/background_test/icons_01.png");
+  background-repeat: no-repeat;
+  /*background-position: -30px -34px;*/
+  transition: all 800ms ease;}
+/*.icons > li > a:hover {background-position: -146px -158px;}*/
+
+/* .icons의 li의 두번째 안에 있는 a => .icons > li:nth-child(2) > a {}*/
+
+.icons > li:nth-child(1) > a {background-position: -30px -34px;}
+.icons > li:nth-child(1) > a:hover {background-position: -30px -158px;}
+
+.icons > li:nth-child(2) > a {background-position: -146px -34px;}
+.icons > li:nth-child(2) > a:hover {background-position: -146px -158px;}
+
+/* .icons2 =================================== */
+.icons2 {box-sizing: border-box; padding: 0.5rem; width: 100%; height: auto;}
+.icons2::after,.icons:after {content: " "; display: block; clear: both;}
+
+.icons2 > li {margin: 1rem; float: left; width: 62px; height: 62px; border: 0.125rem solid #777;}
+
+.icons2 > li > a {background-image: url("../../img/background_test/week.png");
+  background-repeat: no-repeat;
+  transition: all 40ms ease;}
+
+.icons2 > li:nth-child(1) > a {background-position: -28px -21px;}
+.icons2 > li:nth-child(1) > a:hover {background-position: -28px -586px;}
+.icons2 > li:nth-child(1) > a:focus {background-position-y/* y좌표만 바뀌도록 하는 축약법 */: -586px;}
+
+.icons2 > li:nth-child(2) > a {background-position: -248px -131px;}
+.icons2 > li:nth-child(2) > a:hover {background-position: -248px -696px;}
+.icons2 > li:nth-child(2) > a:focus {background-position-y: -696px;}
+
+.icons2 > li:nth-child(3) > a {background-position: -467px -242px;}
+.icons2 > li:nth-child(3) > a:hover {background-position: -467px -806px;}
+.icons2 > li:nth-child(3) > a:focus {background-position-y: -806px;}
+
+.icons2 > li:nth-child(4) > a {background-position: -799px -352px;}
+.icons2 > li:nth-child(4) > a:hover {background-position: -799px -917px;}
+.icons2 > li:nth-child(4) > a:focus {background-position-y: -917px;}
+
+.icons2 > li:nth-child(5) > a {background-position: -1019px -462px;}
+.icons2 > li:nth-child(5) > a:hover {background-position: -1019px -1024px;}
+.icons2 > li:nth-child(5) > a:focus {background-position-y: -1024px;}
+
+/* gradient */
+.linear, .radial {width: 100%; height: auto; margin-bottom: 1rem; background-color: #ffc;}
+.linear > h2, .radial > h2 {background-color: #f70; text-align: center; padding-bottom: 1rem; color: #fff; text-transform: uppercase;}
+.linear > ul, .radial > ul {width: 100%; height: auto;}
+.linear li, .radial li {margin-bottom: 1rem; width: 100%; height: 200px; background-color: #aaa;}
+
+.linear li:first-child {
+  background-color: #f06;
+  /* 그라데이션 사용시 익스플로러 하위버전에서는 색이 나타나지 않기 때문에 대표 색상 하나를 우선 적으로 걸어준다. */
+  background-image: url("../../img/background_test/linear.jpg");
+  background-repeat: repeat-x;
+  /* 그리고 이미지로 그라데이션을 넣어준다. 모든 곳에서 그라데이션이 뜨도록 크로스 브라우징 해주는 것 */
+  background-image: linear-gradient(#ff0, #0ad, #f06);}
+.linear li:nth-child(2) {background-image: linear-gradient(56deg, #ff0, #0ad 20%, #f06 50%);}
+.linear li:nth-child(3) {background-image: linear-gradient(56deg, rgba(255,255,10,0.5) 20%, #0ad 20%, #f06 50%);}
+
+.radial li:first-child {background-image: radial-gradient(ellipse closest-side, #ff5, #0ad, #f06);}
+.radial li:nth-child(2) {background-image: radial-gradient(circle, #ff5, #0ad, #f06);}
+.radial li:nth-child(3) {background-image: radial-gradient(circle at 50% 0, #ff5, #0ad, #f06);}
+
+.gradient_hover {width: 100%; height: 300px;
+  background-color: #0af;
+  background-image: linear-gradient(65deg, #fa0 10%, rgba(0,0,0,0) 30%);
+  transition: all 600ms ease;}
+
+.gradient_hover:hover {
+  background-color: #f0a;
+  background-image: linear-gradient(65deg, #fa0 10%, rgba(0,0,0,0) 30%);}
