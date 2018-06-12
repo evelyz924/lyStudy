@@ -1,0 +1,150 @@
+/* galleria.css */
+
+#wrap {width: 1900px; height: 3980px; background-color: #fa0;}
+
+/* headBox ================================================ */
+#headBox {width: 100%; height: auto; background-color: #111;}
+h1{float: left; width: 150px; height: 68px;}
+h1 > a {
+display: block; width: 100%; height: 100%;
+background-image: url("../../img/galleria/headBox/logo.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;}
+
+/* gnb ----------------- */
+.gnb {float: left; width: 805px; height: 68px;}
+.gnb > ul {width: 100%; height: 100%;}
+.gnb > ul > li {float: left; width: 161px; height: 100%;}
+.gnb > ul > li > a {display: block; width: 100%; height: 100%;}
+
+.gnb > ul > li:nth-child(1) > a {
+  background-image: url("../../img/galleria/headBox/gnb.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.gnb > ul > li:nth-child(2) > a {
+  background-image: url("../../img/galleria/headBox/gnb.png");
+  background-repeat: no-repeat;
+  background-position: -161px center;
+}
+.gnb > ul > li:nth-child(3) > a {
+  background-image: url("../../img/galleria/headBox/gnb.png");
+  background-repeat: no-repeat;
+  background-position: -322px center;
+}
+.gnb > ul > li:nth-child(4) > a {
+  background-image: url("../../img/galleria/headBox/gnb.png");
+  background-repeat: no-repeat;
+  background-position: -483px center;
+}
+.gnb > ul > li:nth-child(5) > a {
+  background-image: url("../../img/galleria/headBox/gnb.png");
+  background-repeat: no-repeat;
+  background-position: -644px center;
+}
+/* gnb_on --------------- */
+.gnb > ul > li:nth-child(1) > a:hover {
+  background-image: url("../../img/galleria/headBox/gnb_on.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.gnb > ul > li:nth-child(2) > a:hover {
+  background-image: url("../../img/galleria/headBox/gnb_on.png");
+  background-repeat: no-repeat;
+  background-position: -161px center;
+}
+.gnb > ul > li:nth-child(3) > a:hover {
+  background-image: url("../../img/galleria/headBox/gnb_on.png");
+  background-repeat: no-repeat;
+  background-position: -322px center;
+}
+.gnb > ul > li:nth-child(4) > a:hover {
+  background-image: url("../../img/galleria/headBox/gnb_on.png");
+  background-repeat: no-repeat;
+  background-position: -483px center;
+}
+.gnb > ul > li:nth-child(5) > a:hover {
+  background-image: url("../../img/galleria/headBox/gnb_on.png");
+  background-repeat: no-repeat;
+  background-position: -644px center;
+}
+
+/* unb ------------------ */
+.unb {float: right; width: 247px; height: 68px;}
+.unb > ul {width: 100%; height: 100%;}
+.unb > ul > li {float: left; width: auto; height: 100%;}
+.unb > ul > li > a {display: block; width: 100%; height: 100%;}
+
+.unb > ul > li:nth-child(1) > a {
+  width: 51px;
+  background-image: url("../../img/galleria/headBox/unb.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.unb > ul > li:nth-child(2) > a {
+  width: 46px;
+  background-image: url("../../img/galleria/headBox/unb.png");
+  background-repeat: no-repeat;
+  background-position: -51px center;
+}
+.unb > ul > li:nth-child(3) > a {
+  width: 59px;
+  background-image: url("../../img/galleria/headBox/unb.png");
+  background-repeat: no-repeat;
+  background-position: -97px center;
+}
+.unb > ul > li:nth-child(4) > a {
+  width: 54px;
+  background-image: url("../../img/galleria/headBox/unb.png");
+  background-repeat: no-repeat;
+  background-position: -156px center;
+}
+.unb > ul > li:nth-child(5) > a {
+  width: 37px;
+  background-image: url("../../img/galleria/headBox/unb.png");
+  background-repeat: no-repeat;
+  background-position: -210px center;
+}
+/* unb_on --------------- */
+.unb > ul > li:nth-child(1) > a:hover {
+  width: 51px;
+  background-image: url("../../img/galleria/headBox/unb_on.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;
+}
+.unb > ul > li:nth-child(2) > a:hover {
+  width: 46px;
+  background-image: url("../../img/galleria/headBox/unb_on.png");
+  background-repeat: no-repeat;
+  background-position: -51px center;
+}
+.unb > ul > li:nth-child(3) > a:hover {
+  width: 59px;
+  background-image: url("../../img/galleria/headBox/unb_on.png");
+  background-repeat: no-repeat;
+  background-position: -97px center;
+}
+.unb > ul > li:nth-child(4) > a:hover {
+  width: 54px;
+  background-image: url("../../img/galleria/headBox/unb_on.png");
+  background-repeat: no-repeat;
+  background-position: -156px center;
+}
+.unb > ul > li:nth-child(5) > a:hover {
+  width: 37px;
+  background-image: url("../../img/galleria/headBox/unb_on.png");
+  background-repeat: no-repeat;
+  background-position: -210px center;
+}
+
+/* adBox ================================================== */
+#adBox {}
+
+/* notice ================================================= */
+
+/* showBox ================================================ */
+
+/* styleBox =============================================== */
+
+/* footBox ================================================ 
