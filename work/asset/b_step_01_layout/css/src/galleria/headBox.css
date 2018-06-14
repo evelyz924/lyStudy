@@ -25,18 +25,30 @@
   #gnb > ul > li > a {background-image: url("../../../img/galleria_img/headBox/gnb_area.png");}
   #gnb > ul > li > a:hover {background-image: url("../../../img/galleria_img/headBox/gnb_on.png");
     background-color: #fff;}
-    #gnb li > a:focus {box-sizing: border-box; border-bottom: 3px solid #fff;}
-    #gnb li:nth-child(1) > a {background-position: 42px center;}
-    #gnb li:nth-child(2) > a {background-position: -119px center;}
-    #gnb li:nth-child(3) > a {background-position: -280px center;}
-    #gnb li:nth-child(4) > a {background-position: -441px center;}
-    #gnb li:nth-child(5) > a {background-position: -602px center;}
+    #gnb > ul > li > a:focus {box-sizing: border-box; border-bottom: 3px solid #fff;}
+
+  #gnb > ul > li:hover > a {background-image: url("../../../img/galleria_img/headBox/gnb_on.png"); background-color: #fff;}
+  #gnb > ul > li:hover .sub_nav {display: block;}
+
+    #gnb > ul > li:nth-child(1) > a {background-position: 42px center;}
+    #gnb > ul > li:nth-child(2) > a {background-position: -119px center;}
+    #gnb > ul > li:nth-child(3) > a {background-position: -280px center;}
+    #gnb > ul > li:nth-child(4) > a {background-position: -441px center;}
+    #gnb > ul > li:nth-child(5) > a {background-position: -602px center;}
+
+
+
+
+
+
 
 /* gnb_하위 내용*/
-    .sub_nav {box-sizing: border-box; padding: 4px;
+    .sub_nav {display: none; box-sizing: border-box; padding: 4px;
       width: 100%; height: auto; background-color: #fff;
       border: 1px solid #363636; border-top: 0; border-bottom: 0;}
     .sub_nav > li {width: 100%; height: auto; margin-bottom: 3px; font-size: 0.85rem; color: #333; text-align: center;}
+
+
 
     .sub_nav > li > a {position: relative; display: block;}
     .sub_nav > li > a:hover {font-weight: bold; font-size: 1rem; border-bottom: 1px solid #333;}
