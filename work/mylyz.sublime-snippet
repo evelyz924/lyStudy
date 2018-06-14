@@ -30,6 +30,7 @@
   <title>${2:pageTitle}</title>
 </head>
 <body>
+  <!-- layout -->
   ${3:<div id="wrap"></div>}
   
   <!-- javascript -->
