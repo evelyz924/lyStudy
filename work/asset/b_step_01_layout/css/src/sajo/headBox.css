@@ -1,1 +1,87 @@
 /* headBox.css */
+
+#headBox {
+  position: fixed; top: 0; left: 0;
+  width: 100%; height: auto;}
+
+/* unb =============================================== */
+#unb {width: 100%; height: 25px; background-color: #09164d;}
+
+#unb > ul {
+  margin-left: 636px;
+  width: 259px; height: inherit;}
+
+#unb > ul > li {
+  float: left;
+  width: 64px; height: inherit;}
+
+#unb > ul > li > a {
+  background-image: url("../../../img/sajo/headBox/unb.png");
+  background-repeat: no-repeat;}
+
+#unb > ul > li:nth-child(1) > a {background-position: 0 center;}
+#unb > ul > li:nth-child(2) > a {background-position: -64px center;}
+#unb > ul > li:nth-child(3) > a {background-position: -128px center;}
+#unb > ul > li:nth-child(4) > a {background-position: -192px center;}
+
+/* gnbWrap =============================================== */
+#gnb {width: 100%; height: 63px; background-color: #fff;}
+
+#gnb > div {
+  margin: auto;
+  box-sizing: border-box; padding: 15px 61px 15px 34px;
+  width: 662px; height: inherit;}
+
+h1 {
+  float: left;
+  width: 81px; height: 33px;
+  background-image: url("../../../img/sajo/headBox/logo.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;}
+
+
+.gnb {
+  float: left;
+  margin-left: 32px;
+  width: 342px; height: 33px;}
+
+.gnb > li {
+  float: left;
+  width: 48px; height: inherit;}
+
+.gnb > li:nth-child(1) {width: 57px;}
+.gnb > li:nth-child(2) {margin-left: 20px;}
+.gnb > li:nth-child(3) {margin-left: 24px;}
+.gnb > li:nth-child(4) {margin-left: 25px;}
+.gnb > li:nth-child(5) {margin-left: 24px;}
+
+.gnb > li > a {
+  background-image: url("../../../img/sajo/headBox/gnb.png");
+  background-repeat: no-repeat;}
+
+.gnb > li:nth-child(1) > a {background-position: 0 center;}
+.gnb > li:nth-child(2) > a {background-position: -77px center;}
+.gnb > li:nth-child(3) > a {background-position: -149px center;}
+.gnb > li:nth-child(4) > a {background-position: -222px center;}
+.gnb > li:nth-child(5) > a {background-position: -294px center;}
+
+
+.lang {
+  float: left;
+  margin-left: 38px;
+  width: 74px; height: 33px;}
+
+.lang > li {
+  float: left;
+  width: 22px; height: inherit;}
+
+.lang > li:nth-child(2) {margin-left: 4px; }
+.lang > li:nth-child(3) {margin-left: 3px; width: 23px;}
+
+.lang > li > a {
+  background-image: url("../../../img/sajo/headBox/lang.png");
+  background-repeat: no-repeat;}
+
+.lang > li:nth-child(1) > a {background-position: 0 center;}
+.lang > li:nth-child(2) > a {background-position: -26px center;}
+.lang > li:nth-child(3) > a {background-position: -51px center;}

@@ -1,1 +1,14 @@
 /* adBox.css */
+
+#adBox {
+  margin-top: 88px;
+  width: 100%; height: 378px;}
+
+#ad1 {
+  width: 100%; height: inherit;
+  background-image: url("../../../img/sajo/adBox/adBox.png");
+  background-repeat: no-repeat;
+  background-position: 0 center;}
+
+#ad2 {width: 100%; height: inherit;}
+#ad2 {width: 100%; height: inherit;}
