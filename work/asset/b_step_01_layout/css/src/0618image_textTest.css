@@ -1,0 +1,10 @@
+/* image_textTest.css */
+
+.text_test {width: 800px; height: auto; background-color: #faa;}
+
+.box {float: left;
+  width: 150px; height: 150px; background-color: #07f;
+  margin-right: 1rem; margin-bottom: 1rem;}
+
+p {width: 100%; height: auto;
+  font-size: 1rem; text-align: justify;}

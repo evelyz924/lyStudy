@@ -1,0 +1,13 @@
+/* 0618cardBox_test.css */
+
+.box {width: 936px; height: auto; background-color: #aaf;}
+
+.title_wrap {float: left; margin: 3px; width: 306px; height: 306px; background-color: #fac;}
+
+.box > ul {width: 100%; height: auto;}
+.box > ul:after{content: " "; display: block; clear: both;}
+
+.box > ul > li {float: left; margin: 3px; 
+  width: 150px; height: 150px; background-color: #fac;
+  text-align: center; line-height: 150px;}
+.box > ul > li:nth-child(4) {float: right; height: 306px;}
