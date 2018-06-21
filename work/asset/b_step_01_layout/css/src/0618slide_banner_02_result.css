@@ -1,0 +1,69 @@
+/* 0618slide_banner_02_result.css */
+
+#wrap {padding-bottom: 1rem;
+  width: 100%; height: auto; background-color: #ccc;}
+
+h1 {padding: 1rem; background-color: #0af; text-align: center;}
+
+.banner {
+  position: relative;
+  width: 100%; height: 40vw; background-color: #faa;}
+  
+  /* .indicator ======================================= */
+  
+  .slide_btn {
+    position: absolute; top: 50%; left: 0;
+    margin-top: -2rem;
+    width: 100%; height: 0; float: left;}
+  .slide_btn > button { cursor: pointer;
+    float: left;
+    width: 4rem; height: 4rem; color: #fff; background-color: rgba(10,10,10,0.7);}
+  .slide_btn > button:last-of-type{float: right;}
+
+  .slide_btn > .prev_btn:after {content: "<"; color: #fff;
+    font-size: 3rem; font-weight: bold;}
+  .slide_btn > .next_btn:after {content: ">"; color: #fff;
+    font-size: 3rem; font-weight: bold;}
+
+
+
+  .btn {position: absolute; bottom: 1rem; right: 1rem; z-index: 150;
+    box-sizing: border-box; padding: 1rem 2rem;
+    width: auto; height: auto; background-color: #171717;
+    border-radius: 3rem;}
+
+
+  .indicator {
+    width: auto; height: auto; float: left;}
+  .indicator > li {
+    float: left; margin-right: 1rem;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    width: 1.5rem; height: 1.5rem; background-color: inherit;
+    border-radius: 100%;}
+  .indicator > li:last-child {margin-right: 0;}
+
+  .indicator > li.active {background-color: #fff;}
+
+  /* .banner ========================================= */
+  .banner_box {width: 100%; height: 100%; overflow: hidden;}
+  .banner_01 {background-color: #f61;}
+  .banner_02 {background-color: #af1;}
+  .banner_03 {background-color: #f6f;}
+
+  /* 1차: 같은자리에 광고배너 겹칠 경우*/
+  /*.banner_wrap {position: relative; width: 100%; height: 100%;}
+  
+  .banner_wrap > div {
+    position: absolute;
+    top: 0; left: 0;
+    z-index: 50;
+    width: 100%; height: 100%;}
+  .banner_wrap > div.active {z-index: 100;}*/
+
+
+  /* 2차: 슬라이드 배너가 가로로 정렬되어 있는 경우 (문제1) */
+  /*.banner_wrap {width: 300%; height: 100%;}
+  .banner_wrap > div {float: left; width: 33.333333%; height: 100%;}*/
+  .banner_wrap {width: calc(100% * 3); height: 100%;}
+  .banner_wrap > div {float: left; width: calc(100% / 3); height: 100%;}
