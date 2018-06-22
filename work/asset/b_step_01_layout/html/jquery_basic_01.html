@@ -1,18 +1,16 @@
-<snippet>
-  <content><![CDATA[
 <!DOCTYPE html>
-<!-- ${1:filename}.html -->
+<!-- jquery_basic_01.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <!-- meta:vp -->
   <meta name="viewport"
-  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
   <!-- import css -->
   <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
-  <link rel="stylesheet" type="text/css" href="../css/src/${1:filename}.css" />
+  <link rel="stylesheet" type="text/css" href="../css/src/jquery_basic_01.css" />
 
   <!-- 조건부 주석 -->
   <!-- cc:id6 -->
@@ -27,21 +25,28 @@
   <!-- link:touch -->
   <link rel="apple-touch-icon" href="../favicon.png" />
   
-  <title>${2:pageTitle}</title>
+  <title>jquery_basic_01</title>
 </head>
 <body>
   <!-- layout -->
-  ${3:<div id="wrap"></div>}
+  <div class="wrap">
+    <h1>jquery 간단한 테스트</h1>
+
+    <p>마우스를 올렸을 경우에 배경색상이 변하게 만들기</p>
+
+    <figure class="img_place">
+      <figcaption class="hidden">이미지 사용</figcaption>
+      <img src="../img/img1.jpg" alt="자연이미지" />
+    </figure>
+
+    <div class="make_type">
+      
+    </div>
+  </div>
   
   <!-- javascript -->
   <script src="../js/base/jquery-3.3.1.min.js"></script>
   <script src="../js/base/jquery-ui.min.js"></script>
-  <script src="../js/src/${1:filename}.js"></script>
+  <script src="../js/src/jquery_basic_01.js"></script>
 </body>
 </html>
-]]></content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>ly</tabTrigger>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <!-- <scope>source.python</scope> -->
-</snippet>
