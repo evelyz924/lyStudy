@@ -7,3 +7,9 @@ prepros-6.config
 # notignore
 notignore
 **/notignore
+
+#ai. psd
+*.ai
+**/*.ai
+*.psd
+**/*.psd
