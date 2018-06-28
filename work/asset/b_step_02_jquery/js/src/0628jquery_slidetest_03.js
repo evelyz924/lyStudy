@@ -58,10 +58,10 @@
     var it = $(this)[0];
     if(it === prevBtn && num > 0){
       num -= 1;
-      console.log('이전보기 버튼 클릭했어요');
+      // console.log('이전보기 버튼 클릭했어요');
     }else if(it === nextBtn && num < bannerLength){
       num += 1;
-      console.log('다음보기 버튼 클릭했어요');
+      // console.log('다음보기 버튼 클릭했어요');
     }else{
       alert('그만눌러!!!');
     }
