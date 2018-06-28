@@ -10,6 +10,10 @@
   <meta name="viewport"
   content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
 
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+
   <!-- import css -->
   <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
   <link rel="stylesheet" type="text/css" href="../css/src/${1:filename}.css" />
@@ -36,6 +40,9 @@
   <!-- javascript -->
   <script src="../js/base/jquery-3.3.1.min.js"></script>
   <script src="../js/base/jquery-ui.min.js"></script>
+  <!-- bootstrap -->
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <!-- myJs -->
   <script src="../js/src/${1:filename}.js"></script>
 </body>
 </html>
