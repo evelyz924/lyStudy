@@ -15,7 +15,7 @@
 	기본 가로값 파악         ->  선택자.width();
 	padding값 포함한 가로값  ->  선택자.innerWidth();
 	border값 포함한 가로값   ->  선택자.outerWidth();
-	marhin값 포함한 가로값   ->  선택자.outerWidth(true);
+	margin값 포함한 가로값   ->  선택자.outerWidth(true);
 */
 	
 	// step1 화면 스크롤 (300px이상 움직였을 경우) top버튼이 나타나게

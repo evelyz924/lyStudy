@@ -1,7 +1,5 @@
-<snippet>
-  <content><![CDATA[
 <!DOCTYPE html>
-<!-- ${1:filename}.html -->
+<!-- 0702basic_form_01.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8" />
@@ -19,7 +17,7 @@
 
   <!-- import css -->
   <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
-  <link rel="stylesheet" type="text/css" href="../css/src/${1:filename}.css" />
+  <link rel="stylesheet" type="text/css" href="../css/src/0702basic_form_01.css" />
 
   <!-- 조건부 주석 -->
   <!-- cc:id6 -->
@@ -34,11 +32,27 @@
   <!-- link:touch -->
   <link rel="apple-touch-icon" href="../favicon.png" />
   
-  <title>${2:pageTitle}</title>
+  <title>0702basic_form_01</title>
 </head>
 <body>
   <!-- layout -->
-  ${3:<div id="wrap"></div>}
+  <div id="wrap">
+    <h1>form</h1>
+    <h2>form이란?</h2>
+    <p>사용자와, 서버간의 상호작용하는 기능(양방향 통신기법)</p>
+
+    <form action="" method="post">
+      <!-- method="get(공개-가볍) | post(보안-무겁다)" -->
+      <fieldset>
+        <!-- form 제작에 필요한 각 파트의 영역 -->
+        <legend>form 영역의 제목</legend>
+        <input type="text" id="idName" name="idName" value="" 
+               placeholder="암거나 입력하세요." required="required" />
+        <label for="idName">당신이 생각하는 그것을 입력하시오!!!</label>
+        <button type="submit">확인 및 전송</button>
+      </fieldset>
+    </form>
+  </div>
   
   <!-- javascript -->
   <script src="../js/base/jquery-3.3.1.min.js"></script>
@@ -46,12 +60,6 @@
   <!-- bootstrap -->
   <script src="../bootstrap/js/bootstrap.min.js"></script>
   <!-- myJs -->
-  <script src="../js/src/${1:filename}.js"></script>
+  <script src="../js/src/0702basic_form_01.js"></script>
 </body>
 </html>
-]]></content>
-  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-  <tabTrigger>ly</tabTrigger>
-  <!-- Optional: Set a scope to limit where the snippet will trigger -->
-  <!-- <scope>source.python</scope> -->
-</snippet>
