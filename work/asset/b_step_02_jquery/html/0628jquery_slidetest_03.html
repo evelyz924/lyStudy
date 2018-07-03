@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- 0628jquery_slidetest_03.html -->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- meta:vp -->
+  <meta name="viewport"
+  content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=0.5">
+	<!-- bootstrap -->
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../bootstrap/css/bootstrap-theme.min.css">
+  <!-- import css -->
+  <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
+  <link rel="stylesheet" type="text/css" href="../css/src/0628jquery_slidetest_03.css" />
+
+  <!-- 조건부 주석 -->
+  <!-- cc:id6 -->
+  <!-- [if lte IE9] >
+    <script src="../ie/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="../ie/pie/PIE_IE9.js"></script>
+  < ![endif] -->
+
+  <!-- favicon -->
+  <!-- link:favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="../favicon.png" />
+  <!-- link:touch -->
+  <link rel="apple-touch-icon" href="../favicon.png" />
+  
+  <title>0628jquery_slidetest_03</title>
+</head>
+<body>
+  <!-- layout -->
+  <div id="wrap">
+    <header id="headBox">
+      <h1>
+        <a href="#">사이트 이름</a>
+      </h1>
+      <nav id="gnb">
+        <h2 class="hidden">네비게이션 영역</h2>
+        <ul>
+          <li><a href="#">menu1</a></li>
+          <li><a href="#">menu2</a></li>
+          <li><a href="#">menu3</a></li>
+          <li><a href="#">menu4</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <article id="adBox">
+      <h2 class="hidden">adBox</h2>
+      <div class="banner_info">
+        <ul class="indicator hidden_wrap">
+          <li><a href="#"><span>배너내용 간단하게 설명</span></a></li>
+          <li><a href="#"><span>배너내용 간단하게 설명</span></a></li>
+          <li><a href="#"><span>배너내용 간단하게 설명</span></a></li>
+          <li><a href="#"><span>배너내용 간단하게 설명</span></a></li>
+          <li><a href="#"><span>배너내용 간단하게 설명</span></a></li>
+        </ul>
+        <div class="slide_btn">
+          <button type="button" class="prev_btn"><span class="hidden">이전내용 확인 버튼</span></button>
+          <button type="button" class="next_btn"><span class="hidden">다음내용 확인 버튼</span></button>
+        </div>
+      </div><!-- // .indicator -->
+
+      <div class="banner_area">
+        <div class="banner_wrap">
+          <div class="banner_00"><a href="#">내용바로가기</a></div>
+          <div class="banner_01"><a href="#">내용바로가기</a></div>
+          <div class="banner_02"><a href="#">내용바로가기</a></div>
+          <div class="banner_03"><a href="#">내용바로가기</a></div>
+          <div class="banner_04"><a href="#">내용바로가기</a></div>
+        </div>
+      </div><!-- // .banner_area -->
+
+    </article> <!-- //#adBox -->
+
+    <article id="contentBox">
+      <h2 class="hidden">contentBox</h2>
+    </article><!-- //#contentBox -->
+
+    <div class="top_btn">
+      <a href="#">
+      	<i class="glyphicon glyphicon-arrow-up"></i>
+      	<span class="hidden">top button</span>
+      </a>
+    </div>
+
+    <footer id="footBox">
+      <h2 class="hidden">footBox</h2>
+    </footer><!-- //#footBox -->
+  </div>
+  
+  <!-- javascript -->
+  <script src="../js/base/jquery-3.3.1.min.js"></script>
+  <script src="../js/base/jquery-ui.min.js"></script>
+  <!-- bootstrap -->
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+  <!-- myJs -->
+  <script src="../js/src/0628jquery_slidetest_03.js"></script>
+  <script src="../js/src/0628jquery_slidetest_03-2.js"></script>
+</body>
+</html>

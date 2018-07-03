@@ -1,0 +1,64 @@
+/* 0629basic_font_01.css */
+
+:root{font-size: 16px;}
+
+.font_01 {padding: 1rem; background-color: #bdf;
+  font-size: 1rem;
+	/*font-family: 영문, 영문의 대체, 영문의 대체, 한글, 한글대체, 전체의 기본서체;*/
+	/*font-family: "myriad pro", "appale Gothic", arial, nanumGothic, "돋움", dotum, sans-serif;*/
+	font-family: 'Roboto', 'Raleway', sans-serif, cursive;}
+  /*
+  디자인, 사용서체가, 웹상에서 써야하기 때문에 내컴퓨터를 기준으로 작성하는 것은 아니다!
+
+  - 1. 웹폰트를 사용할 것을 권장(http://fonts.google.com/)
+  - 2. 강제로 웹폰트를 만들자!
+  - 3. 그래픽 프로그램(포토샵 / 일러스트)을 통한 이미지서체
+  - 4. 포기 ㅠㅠ
+  */
+
+.font_02 {padding: 1rem; background-color: #bdf;
+  font-size: 1rem;
+	font-family: 'Roboto', 'Raleway', sans-serif, cursive;
+	font-weight: ;}
+  /*
+	* font-weight: regular;(기본굵기-400)
+								 thin-100, right-200
+								 bold-600, bolder, extrabold-900
+  */
+
+.font_03 {padding: 1rem; background-color: #dfb;
+  font-size: 1.2rem;
+  font-family: ;}
+
+.font_04 {padding: 1rem; background-color: #f7c; color: #fff;
+  letter-spacing: -0.035rem;
+  word-spacing: -0.3rem;
+  line-height: 1.5;
+  font-style: italic;
+  text-transform: capitalize;
+  text-align: justify;
+  font-stretch: ultra-expanded;}
+/*
+text-transform: uppercase(대문자),
+                     lowercase(소문자),
+                     capitalize(단어첫글자 대문자)
+
+text-align: center;
+            right;
+            left;
+            justify;
+
+*/
+.test {word-spacing: -0.35rem;}
+
+.of {background-color: #0af; margin-bottom: 20rem;}
+.of > p {width: 250px; background-color: #fa0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;}
+/* font 설정시 축약방법
+   font: 기울임 굵기 서체크기 / 행간 서체명, 서체명, 서체명...;
+*/
+.wrap > p {font: italic bold 2rem/200% 'myriad pro',arial,'nanumGothic',sans-serif;}
+.wrap > p::first-line {color: #f06;}
+.wrap > p::first-letter {font-size: 5rem;}
