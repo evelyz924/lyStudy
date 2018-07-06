@@ -2,14 +2,35 @@
 
 #wrap {
 	padding-top: 12rem; box-sizing: border-box;
-	width: 100%; height: 100%; background-image: url(../../img/background_test/img_05.jpg);
-	background-repeat: no-repeat; background-position: center; background-size: cover;}
+	width: 100%; height: 100%;
+	background-image: url(../../img/background_test/img_05.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;}
 
 form {margin: auto;
   box-sizing: border-box; padding: 30px 35px 0;
   width: 450px; height: 450px;
-  background-color: rgba(0,0,0,0.7);
-  border-radius: 6px; /*overflow: hidden;*/}
+/*  background-color: rgba(0,0,0,0.8);
+	background-image: url("../../img/background_test/img_05_blur.jpg");	
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;*/
+  border-radius: 6px; /*overflow: hidden;*/\
+  position: relative; z-index: 100;}
+
+form:after {content: " "; display: block;
+  position: absolute; z-index: -100; top: 0; left: 0;
+  width: 100%; height: 100%;
+  /*background-color: rgba(0,0,0,0.5);*/
+  background: url(../../img/background_test/img_05.jpg);
+  background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+  filter: blur(5px);}
 
 fieldset {width: 100%;}
 .sign_in {position: relative;
