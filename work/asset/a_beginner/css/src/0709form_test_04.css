@@ -1,0 +1,32 @@
+/* 0709form_test_04.css */
+
+#wrap {width: 100%; height: 100%; background-color: #000;}
+
+.quotation {margin: auto; box-sizing: border-box; padding-top: 3rem; width: 450px; height: 365px;}
+
+.title {width: 100%; height: 73px;
+	background-image: url(../../img/quotatioin/bg.png);}
+h2 {box-sizing: border-box; padding-top: 20px; padding-left: 38px;  color: #fff;}
+
+.text {box-sizing: border-box; padding: 13px 0;
+	width: 100%; height: 88px; background-color: #fff;}
+
+.text > h3 {
+	margin-left: 47px;
+	width: 100%; height: 34px;
+  background-image: url(../../img/quotatioin/h3.png);
+  background-repeat: no-repeat;}
+.text > p {
+	margin-left: 47px;
+	width: 100%; height: 33px;
+  background-image: url(../../img/quotatioin/p_01.png);
+  background-repeat: no-repeat;}
+
+/* 인증영역 */
+form {width: 100%; height: 205px; background-color: #0af;}
+
+.tel {margin: auto; width: 375px; height: 96px; background-color: #ddd;}
+
+.number > dt + dd {display: inline; float: left;}
+
+.telecom > dt + dd {display: inline; float: left;}
