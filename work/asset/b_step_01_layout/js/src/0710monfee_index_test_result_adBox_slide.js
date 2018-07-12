@@ -34,4 +34,18 @@
 		if(j === prev && i > 0){	i-=1;	} else if (j === next && i < indiLiLength - 1){	i+=1;	}
 		Que(i);
 	});
+
+  indiLi.find('a').on('focus',function(e) {
+  	$(window).scrollTop(0);
+  });
+
+  slideBtn.find('button').on('focus',function(e) {
+  	$(window).scrollTop(0);
+  });
+
+
+
+
+
+
 })(jQuery);

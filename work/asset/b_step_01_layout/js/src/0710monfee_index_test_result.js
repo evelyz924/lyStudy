@@ -10,11 +10,67 @@
 		var nowTop = $(window).scrollTop() ;
 
 		if(beforeTop <= nowTop){
-			headBox.css({positionin:'fixed', top:0, bottom:'auto'});
+			// headBox.css({position:'fixed', top:0, bottom:'auto'});
+			headBox.addClass('fixed');
 		}else{
-			headBox.removeAttr('style');
+			// headBox.removeAttr('style');
+			headBox.removeClass('fixed');
 		}
 
+	});
+
+	// ------------------------------------------------------
+	var win = $(window);
+	var wh = win.outerHeight();
+	var headChild = headBox.children('#headBox');
+	var headNav   = headBox.find('ul').children('li');
+	var headOl    = headBox.find('ol');
+	var olLink    = headOl.find('a');
+	var timed     = 500;
+	// headOl.hide();
+	  headOl.addClass('top');
+
+	headNav.on('mouseenter',function(e) {
+
+		// 스크롤의 위치를 파악
+		var st = $(window).scrollTop();
+		if(wh/2 > st){
+			headChild.addClass('top')
+			headOl.addClass('top');
+		}else{
+			headChild.removeClass('top');
+			headOl.removeClass('top');
+		}
+
+
+		headOl.stop().slideDown(timed);
+		headChild.addClass('show');
+	});
+
+	headBox.on('mouseleave',function(e) {
+		headOl.stop().slideUp(timed)
+		headChild.removeClass('show');
+
+
+
+
+
+	});
+
+	headNav.children('a').on('focus',function(e) {
+		// headOl.stop().slideDown(timed);
+		// headChild.addClass('show');
+
+		headNav.trigger('mouseenter');
+		// trigger라는 기능은 방아쇠 라는 의미로,
+		// 미리 만들어진 이벤트 기능을 수행하도록 처리
+	});
+
+	olLink.eq(-1).on('blur',function(e) {
+		// headOl.stop().slideUp(timed)
+		// headChild.removeClass('show');
+
+		headBox.trigger('mouseleave');
 	});
 
 
