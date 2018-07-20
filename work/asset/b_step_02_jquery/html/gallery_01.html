@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 0718rwd_gnb_01.html -->
+<!-- gallery_01.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8" />
@@ -20,7 +20,7 @@
 
   <!-- import css -->
   <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
-  <link rel="stylesheet" type="text/css" href="../css/src/0718rwd_gnb_01.css" />
+  <link rel="stylesheet" type="text/css" href="../css/src/gallery_01.css" />
 
   <!-- 조건부 주석 -->
   <!-- cc:id6 -->
@@ -35,35 +35,45 @@
   <!-- link:touch -->
   <link rel="apple-touch-icon" href="../favicon.png" />
   
-  <title>0718rwd_gnb_01</title>
+  <title>gallery_01</title>
 </head>
 <body>
   <!-- layout -->
   <div id="wrap">
-  	<header id="headBox">
-  		<h1><a href="#">site</a></h1>
-      
-  		<div class="gnb_wrap">
-  			<div class="gnb_btn">
-  				<button type="button" class="active">
-  					<i class="icon"></i>
-	  				<span class="hidden">btn</span>
-	  			</button>
-  			</div>
-  			<nav id="gnb">
-  				<h2 class="hidden">global navigation</h2>
-  				<ul>
-  					<li><a href="#">nab_01</a></li>
-  					<li><a href="#">nab_02</a></li>
-  					<li><a href="#">nab_03</a></li>
-  					<li><a href="#">nab_04</a></li>
-  					<li><a href="#">nab_05</a></li>
-  				</ul>
-  			</nav>
+  	<h1>gallery image</h1>
+  	<article id="gallery">
+  		<h2 class="hidden">image gallery</h2>
+  		<div class="gall_box"><a href="#">이미지 링크 바로가기</a></div>
+  		<div class="list">
+  			<ul>
+  				<li><a href="#">
+  					<img src="../img/gallery/j01.jpg"
+                 data-src="../img/gallery/j01_big.jpg"
+  					     alt="list_01">
+  				</a></li>
+  				<li><a href="#">
+  					<img src="../img/gallery/j02.jpg"
+                 data-src="../img/gallery/j02_big.jpg"
+  					     alt="list_02">
+  				</a></li>
+  				<li><a href="#">
+  					<img src="../img/gallery/j03.jpg"
+                 data-src="../img/gallery/j03_big.jpg"
+  					     alt="list_03">
+  				</a></li>
+  				<li><a href="#">
+  					<img src="../img/gallery/j04.jpg"
+                 data-src="../img/gallery/j04_big.jpg"
+  					     alt="list_04">
+  				</a></li>
+  				<li><a href="#">
+  					<img src="../img/gallery/j05.jpg"
+                 data-src="../img/gallery/j05_big.jpg"
+  					     alt="list_05">
+  				</a></li>
+  			</ul>
   		</div>
-  	</header>
-  	<article id="adBox"></article>
-  	<article id="contentBox"></article>
+  	</article>
   </div>
   
   <!-- javascript -->
@@ -72,6 +82,6 @@
   <!-- bootstrap -->
   <!-- <script src="../bootstrap/js/bootstrap.min.js"></script> -->
   <!-- myJs -->
-  <script src="../js/src/0718rwd_gnb_01.js"></script>
+  <script src="../js/src/gallery_01.js"></script>
 </body>
 </html>
