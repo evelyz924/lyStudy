@@ -19,15 +19,14 @@
 
 	
 
-	// ------------------------------------
-	// var winW = $(window).outerWidth();
+	//------------------------------------
+	var winW = $(window).outerWidth();
 
 	$(window).on('resize',function(e) {
 		var nowW = $(window).outerWidth();
 		if(winW !== nowW){
 			location.reload();
 		}
-
 	});
 
 
