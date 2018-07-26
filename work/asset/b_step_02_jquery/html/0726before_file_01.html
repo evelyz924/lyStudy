@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- 0723gallery_modal_01.html -->
+<!-- 0726before_file_01.html -->
 <html lang="ko-KR">
 <head>
   <meta charset="UTF-8" />
@@ -17,7 +17,7 @@
 
   <!-- import css -->
   <link rel="stylesheet" type="text/css" href="../css/base/reset.css" />
-  <link rel="stylesheet" type="text/css" href="../css/src/0723gallery_modal_01.css" />
+  <link rel="stylesheet" type="text/css" href="../css/src/0726before_file_01.css" />
 
   <!-- 조건부 주석 -->
   <!-- cc:id6 -->
@@ -32,29 +32,34 @@
   <!-- link:touch -->
   <link rel="apple-touch-icon" href="../favicon.png" />
   
-  <title>0723gallery_modal_01</title>
+  <title>0726before_file_01</title>
+  <style>
+
+  </style>
 </head>
 <body>
   <!-- layout -->
-  <div id="wrap">
-  	<h1>modal window</h1>
-  	<article id="contentBox">
-  		<div class="modal_box"></div>
-  		<div class="modal_bg"></div>
-
-  		<ul class="list hidden_wrap clearfix">
-  			<li><a href="#"><span>섬네일이미지_01</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_02</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_03</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_04</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_05</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_06</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_07</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_08</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_09</span></a></li>
-  			<li><a href="#"><span>섬네일이미지_10</span></a></li>
-  		</ul>
+  <div class="wrap">
+  	<header id="headBox">
+  		<h1>간단한 문서 형식 보기</h1>
+	    <script>
+		  	(function(e) {
+		  		var headBox = $('#headBox');
+				  		headBox.on('mouseenter',function(){
+			  			headBox.animate({background:'#fcc'});
+		  		});
+		  	})(jQuery);
+		  </script>
+  	</header>
+  	<article id="adBox">
+  		<h2>광고 영역 표기</h2>
   	</article>
+  	<article id="contentBox">
+  		<h2>내용보기</h2>
+  	</article>
+  	<footer id="footBox">
+  		<h2>회사정보</h2>
+  	</footer>
   </div>
   
   <!-- javascript -->
@@ -63,7 +68,7 @@
   <!-- bootstrap -->
   <!-- <script src="../bootstrap/js/bootstrap.min.js"></script> -->
   <!-- myJs -->
-  <script src="../js/src/0723gallery_modal_01.js"></script>
-  <script src="../js/src/0723gallery_modal_02.js"></script>
+  <!-- <script src="../js/src/0726before_file_01.js"></script> -->
+
 </body>
 </html>
